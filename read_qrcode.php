@@ -8,7 +8,10 @@
 // Lees de QR code die je net hebt gemaakt
 // Het bestand moet eerst naar PNG omgezet worden, dat gebeurt hier
 // Deze code krijg je van mij en kun je laten staan.
+use Zxing\Qrcode;
 
+$qrcode = new QrReader('qrcode.png');
+$text = $qrcode->text(); //return decoded text from QR Code
 
 // Je hebt NU dus een "qrcode.png" die je kunt inladen
 
